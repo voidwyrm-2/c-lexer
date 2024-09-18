@@ -4,7 +4,7 @@
 #include "tokens.h"
 
 int main() {
-    Lexer *lexer = NewLexer("1 + 1 * 2");
+    Lexer *lexer = NewLexer("1 1 + 2 *");
     
     LexerResult res = Lex(lexer);
     if (res.err != NULL) {
